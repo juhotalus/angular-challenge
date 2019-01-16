@@ -1,0 +1,11 @@
+
+<ul class="data-list">
+  <li class="data-header">
+    <span class="id-header id">ID</span><span class="title-header title">Title</span>
+  </li>
+  <li class="data-unit" *ngFor="let dataunit of data" (click)="onSelect(dataunit)">
+    <span class="id">{{ dataunit.id }}</span><span class="title">{{ dataunit.title }}</span>
+  </li>
+</ul>
+
+<app-dataunit-detail [dataunit]="selectedDataunit"></app-dataunit-detail>
