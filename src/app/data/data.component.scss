@@ -1,1 +1,56 @@
- 
+* {
+    box-sizing: border-box;
+}
+.data-list-view {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+ul.data-list {
+    margin: 0;
+    padding: 0;
+    border: solid 1px #333;
+    border-bottom: none;
+
+    li {
+        border-bottom: solid 1px #333;
+        font-size: 14px;
+        transition: background-color 0.25s;
+
+        &:nth-child(odd) {
+            background-color: #f8f8f8;
+        }
+
+        &:first-child {
+            background-color: #777;
+            color: #fff;
+        }
+
+        .id, .title {
+            padding: 5px;
+        }
+        .id {
+            display: inline-block;
+            min-width: 40px;
+            text-align: right;
+            border-right: solid 1px #333;
+        }
+        .title {
+        }
+
+        &.selected, &:hover {
+            background-color: #ccc;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.dataunit-detail-view {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+}
