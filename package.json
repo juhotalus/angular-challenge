@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-css": "sass --style=compressed src/app/app.component.scss:src/app/app.component.css src/app/data/data.component.scss:src/app/data/data.component.css",
-    "watch-css": "sass --style=compressed --watch src/app/app.component.scss:src/app/app.component.css src/app/data/data.component.scss:src/app/data/data.component.css"
+    "build-css": "sass --style=compressed src/app/app.component.scss:src/app/app.component.css src/app/data/data.component.scss:src/app/data/data.component.css src/app/dataunit-detail/dataunit-detail.component.scss:src/app/dataunit-detail/dataunit-detail.component.css",
+    "watch-css": "sass --style=compressed --watch src/app/app.component.scss:src/app/app.component.css src/app/data/data.component.scss:src/app/data/data.component.css src/app/dataunit-detail/dataunit-detail.component.scss:src/app/dataunit-detail/dataunit-detail.component.css"
   },
   "private": true,
   "dependencies": {

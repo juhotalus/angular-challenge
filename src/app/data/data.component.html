@@ -8,7 +8,8 @@
         *ngFor="let dataunit of data" 
         (click)="onSelect(dataunit)" 
         [class.selected]="dataunit === selectedDataunit">
-      <span class="id">{{ dataunit.id }}</span><span class="title">{{ dataunit.title }}</span>
+      <span class="id">{{ dataunit.id }}</span>
+      <span class="title">{{ dataunit.title }}</span>
     </li>
   </ul>
 </div>
